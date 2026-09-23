@@ -166,6 +166,7 @@ The Kaggle API key is required to:
    ```
 5. Accept the Gemma model licence at [https://www.kaggle.com/models/google/gemma](https://www.kaggle.com/models/google/gemma).
 <img width="3188" height="1800" alt="12" src="https://github.com/user-attachments/assets/3327660c-b1c9-4512-a2cb-42a7698f84c2" />
+<img width="3200" height="1828" alt="11" src="https://github.com/user-attachments/assets/558eabac-4fe5-4005-95f3-378db80911df" />
 
 **Setting credentials in the script:**
 
