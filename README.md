@@ -165,6 +165,7 @@ The Kaggle API key is required to:
    }
    ```
 5. Accept the Gemma model licence at [https://www.kaggle.com/models/google/gemma](https://www.kaggle.com/models/google/gemma).
+<img width="3188" height="1800" alt="12" src="https://github.com/user-attachments/assets/3327660c-b1c9-4512-a2cb-42a7698f84c2" />
 
 **Setting credentials in the script:**
 
@@ -210,6 +211,7 @@ from google.colab import userdata
 os.environ["KAGGLE_USERNAME"] = userdata.get("KAGGLE_USERNAME")
 os.environ["KAGGLE_KEY"]      = userdata.get("KAGGLE_KEY")
 ```
+<img width="3200" height="1858" alt="13" src="https://github.com/user-attachments/assets/e211346e-b019-496b-bf64-869ca51e0ea0" />
 
 ### Step 2 — Install dependencies
 
@@ -296,6 +298,7 @@ JaxRuntimeError: RESOURCE_EXHAUSTED: Out of memory while trying to allocate 1.95
 with allocator GPU_0_bfc on device 0.
 [executable_name='jit_greater'] [tf-allocator-allocation-error='']
 ```
+<img width="3200" height="1822" alt="14" src="https://github.com/user-attachments/assets/13a7a2aa-61ee-4f76-b69f-56787c559a00" />
 
 **Root cause:** Even with `XLA_PYTHON_CLIENT_MEM_FRACTION=1.0` and `batch_size=1`, loading the full Gemma 2B model in JAX on a 15 GB T4 leaves insufficient memory for the forward pass, loss computation, and gradient accumulation at a sequence length of 512 tokens.
 
